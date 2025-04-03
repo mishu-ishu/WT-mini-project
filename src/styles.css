@@ -1,0 +1,82 @@
+:root {
+    --primary-red: #FA7070;
+    --off-white: #FEFDED;
+    --light-green: #C6EBC5;
+    --muted-green: #A1C398;
+    --dark-blue: #002147;
+    --text-color: #333;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--off-white);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .search-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .search-button {
+    background-color: var(--light-green);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .hero {
+    background: url('/assets/hero-bg.png') no-repeat center center/cover;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .popular-localities {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .locality {
+    background-color: var(--muted-green);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
