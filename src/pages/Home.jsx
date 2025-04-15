@@ -113,10 +113,6 @@ const Home = () => {
     </Row>
   </Container>
 </section>
-
-
-
-
       {/* Featured Properties */}
       <section className="py-5">
         <Container>
@@ -189,34 +185,6 @@ const Home = () => {
           </Row>
         </Container>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-light py-4">
-        <Container>
-          <Row>
-            <Col md={3}>
-              <h6>Opening Hours</h6>
-              <p>Mon–Fri: 08:00AM – 06:00PM<br />Sat–Sun: 08:00AM – 06:00PM</p>
-            </Col>
-            <Col md={3}>
-              <h6>Find Us</h6>
-              <p>8011 Tranquewood Ave.<br />Capitol Heights, MD 20743</p>
-              <p>+9581 237-4687<br />market89@gmail.com</p>
-            </Col>
-            <Col md={3}>
-              <h6>Property</h6>
-              <p>Apartment<br />Villas<br />Houses<br />Commercial</p>
-            </Col>
-            <Col md={3}>
-              <h6>Newsletter</h6>
-              <Form.Control className="mb-2" placeholder="Your email" />
-              <Button variant="warning" size="sm">Subscribe</Button>
-            </Col>
-          </Row>
-          <hr />
-          <p className="text-center mb-0">&copy; 2025 Real Estate. All Rights Reserved.</p>
-        </Container>
-      </footer>
     </div>
   );
 };
