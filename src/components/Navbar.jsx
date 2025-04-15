@@ -1,5 +1,6 @@
 import React from "react";
 import { FaUser, FaPhone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"; // Replace with your actual logo path
 import "./Navbar.css";
 
@@ -15,11 +16,12 @@ const Navbar = () => {
 
         {/* Nav Links */}
         <ul className="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Buy</a></li>
-          <li><a href="#">Rent</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/buy">Buy</Link></li>
+          <li><Link to="/rent">Rent</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
+
         </ul>
 
         {/* Icons Section */}
