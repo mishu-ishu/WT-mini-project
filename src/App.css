@@ -1,3 +1,4 @@
+/* Core Root Styling */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,6 +6,12 @@
   text-align: center;
 }
 
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Logo Animations (default) */
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -26,7 +33,6 @@
     transform: rotate(360deg);
   }
 }
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -39,4 +45,155 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* General Section Padding */
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* Responsive Vertical Card Layout on Small Devices */
+@media (max-width: 768px) {
+  .section-cards .card {
+    margin-bottom: 1.5rem;
+  }
+
+  .section-cards .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* BUY, RENT, PG/Co-living Card Styling */
+.section-cards .card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.section-cards .card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.section-cards .card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.section-cards .card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.section-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Images */
+.section-cards .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Card Body */
+.section-cards .card-body {
+  padding: 1.5rem;
+}
+
+.section-cards .card-body h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.section-cards .card-body p {
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  color: #555;
+}
+
+/* Buttons */
+.section-cards .btn-warning,
+.btn-warning {
+  background-color: #fa7070;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.section-cards .btn-warning:hover,
+.btn-warning:hover {
+  background-color: #e65555;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fefded;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fa7070;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e65555;
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #fa7070;
+  color: #fefded;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: #fefded;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .copyright {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #fefded;
+}
+
+/* Contact Section Card Fix */
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,74 @@
+/* Footer CSS */
+.footer {
+    background-color: var(--off-white);
+    padding: 3rem 0;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .footer h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--muted-green);
+    margin-bottom: 1.2rem;
+  }
+  
+  .footer p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .footer .btn-warning {
+    background-color: var(--red);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .footer .btn-warning:hover {
+    background-color: var(--muted-green);
+  }
+  
+  /* Align the footer content */
+  .footer .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer .footer-section {
+    flex: 1;
+    min-width: 220px;
+    margin-bottom: 2rem;
+  }
+  
+  .footer .footer-section h6 {
+    margin-bottom: 1rem;
+  }
+  
+  .footer .footer-bottom p {
+    color: #888;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .footer .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer .footer-section {
+      text-align: center;
+    }
+  
+    .footer .btn-warning {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+  
