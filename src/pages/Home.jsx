@@ -1,6 +1,7 @@
 import React from 'react';
-import '../App.css';
+import '../App.css'; // Custom styles
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
+
 
 const Home = () => {
   return (
