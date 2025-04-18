@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 
 const Footer = () => {
@@ -18,11 +19,11 @@ const Footer = () => {
           <Col md={4} className="mb-4">
             <h5 className="fw-bold" style={{ color: '#FEFDED' }}>Quick Links</h5>
             <ul className="list-unstyled">
-              <li><a href="#" style={{ color: '#FEFDED' }}>Home</a></li>
-              <li><a href="#" style={{ color: '#FEFDED' }}>Buy</a></li>
-              <li><a href="#" style={{ color: '#FEFDED' }}>Rent</a></li>
-              <li><a href="#" style={{ color: '#FEFDED' }}>PG/Co-living</a></li>
-              <li><a href="#" style={{ color: '#FEFDED' }}>Contact</a></li>
+              <li><Link to="/" style={{ color: '#FEFDED' }}>Home</Link></li>
+              <li><Link to="/buy" style={{ color: '#FEFDED' }}>Buy</Link></li>
+              <li><Link to="/rent" style={{ color: '#FEFDED' }}>Rent</Link></li>
+              <li><Link to="/about" style={{ color: '#FEFDED' }}>About Us</Link></li>
+              <li><Link to="/contact" style={{ color: '#FEFDED' }}>Contact Us</Link></li>
             </ul>
           </Col>
 
