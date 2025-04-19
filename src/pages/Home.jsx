@@ -1,10 +1,12 @@
 import React from 'react';
 import '../App.css'; // Custom styles
+import { useNavigate } from 'react-router-dom';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
 import bgHero from "../assets/herosection.jpeg"
 
 
 const Home = () => {
+  const navigate = useNavigate();
   return (
     <div>
 
@@ -88,7 +90,7 @@ const Home = () => {
                   <h3 className="fw-bold">Buy a Home</h3>
                   <p className="lead">Find, Buy & Own Your Dream Home</p>
                   <p>Explore from Apartments, Land, Builder Floors, Villas, and more.</p>
-                  <Button variant="warning">Explore Buying</Button>
+                  <Button variant="warning" onClick={() => navigate("/buy")}>Explore Buying</Button>
                 </Card.Body>
               </Card>
             </Col>
@@ -101,7 +103,7 @@ const Home = () => {
                   <h3 className="fw-bold">Rent a Home</h3>
                   <p className="lead">Affordable & Comfortable Living</p>
                   <p>Explore rental homes suitable for every lifestyle and budget.</p>
-                  <Button variant="warning">Explore Renting</Button>
+                  <Button variant="warning" onClick={() => navigate("/rent")}>Explore Renting</Button>
                 </Card.Body>
               </Card>
             </Col>
