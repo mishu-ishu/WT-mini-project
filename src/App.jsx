@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Aboutus from "./pages/Aboutus";
+import Contactus from "./pages/Contact";
 import Footer from "./components/Footer";
 
 import Buy from "./pages/Buy";
@@ -27,6 +28,7 @@ function App() {
         <Route path="/buy" element={<Buy />} />
         <Route path="/rent" element={<Rent />} />
         <Route path="/about" element={<Aboutus />} />
+        <Route path ="/contact" element={<Contactus />} />
       </Routes>
 
 
